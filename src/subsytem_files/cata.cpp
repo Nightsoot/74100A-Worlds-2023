@@ -10,6 +10,7 @@ void shoot_loop(){
                 pros::delay(400);
                 cata.brake();
                 shooting = 3;
+                break;
             //shot with boost
             case 2:
                 cata.move_velocity(100);
@@ -19,6 +20,7 @@ void shoot_loop(){
                 piston_boost.set_value(0);
                 cata.brake();
                 shooting = 3;
+                break;
             //load
             case 3:
                 if(cata_stop.get() > 110){
@@ -28,6 +30,7 @@ void shoot_loop(){
                     cata.brake();
                     shooting = 4;
                 }
+                break;
             //hold position
             case 4:
                 break;
