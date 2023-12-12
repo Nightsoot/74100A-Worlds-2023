@@ -13,3 +13,6 @@ extern pros::Motor intake_motor;
 extern pros::Motor cata;
 extern pros::Distance cata_stop;
 extern pros::ADIDigitalOut piston_boost;
+
+
+void shoot_loop();

@@ -18,7 +18,7 @@ void driver_control(){
         right_joystick = Controller1.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
 
         arms::chassis::arcade(left_joystick, right_joystick);
-
+    
     if(Controller1.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)){
       Intake_running = !Intake_running;
     }
@@ -43,10 +43,10 @@ void driver_control(){
         }
     }
     */
-
+   
     if(Controller1.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_R1)){
         SHOOT;
-        /*
+      /*
         cata.move_velocity(100);
         pros::delay(400);
         load = true;
@@ -55,7 +55,7 @@ void driver_control(){
     }
     else if(Controller1.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_R2)){
         SHOOT_BOOST;
-        /*
+      /*
         cata.move_velocity(100);
         pros::delay(100);
         piston_boost.set_value(1);
@@ -65,8 +65,8 @@ void driver_control(){
         cata.brake();
         */
     }
-
-
+    
+    
     pros::lcd::print(0,"Left Motors Efficency");
     pros::lcd::print(1, "%f, %f, %f", arms::chassis::leftMotors->get_efficiencies()[0],arms::chassis::leftMotors->get_efficiencies()[1],arms::chassis::leftMotors->get_efficiencies()[2]);
     pros::lcd::print(3,"Right Motors Efficency");

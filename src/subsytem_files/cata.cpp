@@ -21,7 +21,7 @@ void shoot_loop(){
                 shooting = 3;
             //load
             case 3:
-                if(cata_stop.get() > 80){
+                if(cata_stop.get() > 110){
                   cata.move_velocity(100);
                 }
                 else{

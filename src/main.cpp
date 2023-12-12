@@ -25,7 +25,7 @@ void on_center_button() {
 void initialize() {
 	pros::lcd::initialize();
 	arms::init();
-	pros::Task cata_task(shoot_loop);
+	//pros::Task cata_task(shoot_loop);
 }
 
 /**

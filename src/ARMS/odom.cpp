@@ -149,7 +149,7 @@ int odomTask() {
 	}
 
 	printf("Finished \n");
-	Controller2.set_text(1,1,"Ready");
+	
 
 	pros::delay(15);
 
